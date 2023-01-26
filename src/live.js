@@ -46,13 +46,12 @@ webcamButton.onclick = async () => {
         audio: true,
         video: true,
     })
-
     
     localStreamer.getTracks().forEach((track) => {
         pc.addTrack(track, localStreamer)
     })
 
-
+    
     webcamVideo.srcObject = localStreamer
 }
 
@@ -146,7 +145,6 @@ document.querySelector("#answerButton").onclick = async () => {
 
 remoteStream = new MediaStream();
 
-// Pull tracks from remote stream, add to video stream
 pc.ontrack = event => {
     event.streams[0].getTracks().forEach(track => {
         remoteStream.addTrack(track);
