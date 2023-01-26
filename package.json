@@ -1,12 +1,20 @@
 {
-  "dependencies": {
-    "express": "^4.18.2",
-    "yarn": "^1.22.19"
-  },
-  "name": "live-streaming-RTC",
+  "name": "videoRTC",
   "version": "1.0.0",
-  "main": "app.js",
+  "main": "index.js",
   "repository": "https://github.com/Guilherme-Joviniano/videoRTC.example.git",
   "author": "Guilherme Joviniano de Sousa",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "firebase": "^8.2.10",
+    "nodemon": "^2.0.20",
+    "socket.io": "^4.5.4",
+    "sucrase": "^3.29.0",
+    "vite": "^4.0.4"
+  }
 }
